@@ -1,0 +1,47 @@
+/* GENERAL STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    max-width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+/* MAIN */
+.wrap {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+input {
+    margin: 30px auto;
+    width: 50%;
+    height: 35px;
+    border: 1px solid lightgrey;
+     border-radius: 5px;
+}
+::placeholder {
+    font-size: 12px;
+    padding-left: .8em;
+    color: grey;
+}
+
+
+
+.gallery {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 20px;
+    column-gap: 20px;
+    margin-bottom: 40px;
+}
+
