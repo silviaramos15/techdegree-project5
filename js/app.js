@@ -16,10 +16,11 @@ function searchWord() {
     word.value = word.value.toLowerCase();
     console.log(word.value)
     
-    let list = document.getElementsByTagName('img');
+    let list = document.querySelectorAll('.gallery a');
     for (let i = 0; i < list.length; i++) {
+        let alt = list[i].getElementsByTagName('img')[0].alt;
 
-        if (list[i].getAttribute("alt").toLowerCase().match(word.value)) {
+        if (alt.toLowerCase().match(word.value)) {
             console.log(list[i].getAttribute("alt"));
             list[i].style.display = "";
         } else {
