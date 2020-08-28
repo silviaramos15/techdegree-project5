@@ -27,6 +27,7 @@ input {
     height: 35px;
     border: 1px solid lightgrey;
      border-radius: 5px;
+   
 }
 ::placeholder {
     font-size: 12px;
@@ -34,7 +35,9 @@ input {
     color: grey;
 }
 
-
+input[type="text"]:focus {
+    border: 1px solid grey;
+}
 
 .gallery {
     /* width: 100%; */
