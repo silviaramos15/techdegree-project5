@@ -18,7 +18,7 @@ function searchWord() {
     
     let list = document.querySelectorAll('.gallery a');
     for (let i = 0; i < list.length; i++) {
-        let alt = list[i].getElementsByTagName('img')[0].alt;
+        let alt = list[i].getAttribute('data-caption');
 
         if (alt.toLowerCase().match(word.value)) {
             console.log(list[i].getAttribute("alt"));
